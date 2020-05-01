@@ -1,3 +1,24 @@
+# Orignal에서 addon 설치만 제거한 버전임.
+* forVM 폴더 추가.
+* .gitignore 추가
+* /etc/environment 파일에 Language 셋팅 추가함.
+* node숫자 2개로 
+## Usage
+```
+git config --global core.autocrlf false
+git config --global core.eol lf
+cd 
+git clone https://github.com/Finfra/kubernetes_quickstart
+cd kubernetes_quickstart
+vagrant plugin install vagrant-winnfsd
+vagrant up
+vagrant status 
+vagrant ssh node1
+   sudo -i
+   kubectl cluster-info
+```
+
+
 # Setting up a distributed Kubernetes cluster along with Istio service mesh locally with Vagrant and VirtualBox
 
 [使用Vagrant和VirtualBox在本地搭建分布式Kubernetes集群和Istio Service Mesh - 中文](README-cn.md)
